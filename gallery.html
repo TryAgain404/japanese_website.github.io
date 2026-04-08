@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    header,
+    .logo,
+    .accountAndCart,
+    .links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111119;
+    }
+
+    .links a {
+      color: white;
+    }
+
+    .accountAndCart {
+      gap: 20px;
+    }
+
+    .links {
+      gap: 50px;
+    }
+
+    .image_row {
+      display: flex;
+      justify-content: center;
+      /* gap: 1%; */
+      flex-wrap: wrap;
+      /* margin: 5%; */
+    }
+
+    .image_row img {
+      margin: 1%;
+      width: auto;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .image_row img {
+        width: 45%;
+      }
+
+      .links {
+        gap: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image_row img {
+        width: 90%;
+      }
+
+      header {
+        flex-direction: column;
+        padding: 10px;
+      }
+    }
+  </style>
+
+  <body>
+    <header>
+      <section class="logo">
+        <img src="./Assets/Icons/Logo-Ramen.svg" />
+        <p>Japanese Restaurant</p>
+      </section>
+      <section class="links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+      </section>
+      <section class="accountAndCart">
+        <img src="./Assets/Icons/ShoppingCart.svg" alt="" />
+        <img src="./Assets/Icons/AccountIcon.svg" alt="" />
+      </section>
+    </header>
+    <section class="title">
+      <img
+        src="./Assets/Images/Gallery/Gallery_Menu_Header_Image.png"
+        alt="Gallery header image"
+      />
+      <h1>GALLERY</h1>
+      <p>Images of food</p>
+    </section>
+    <br><br>
+    <section class="image_row">
+      <img src="./Assets/Images/Gallery/1.png" alt="food image" />
+      <img src="./Assets/Images/Gallery/2.png" alt="food image" />
+      <img src="./Assets/Images/Gallery/3.png" alt="food image" />
+      <img src="./Assets/Images/Gallery/4.png" alt="food image" />
+      <img src="./Assets/Images/Gallery/5.png" alt="food image" />
+      <img src="./Assets/Images/Gallery/6.png" alt="food image" />
+      <img src="./Assets/Images/Gallery/7.png" alt="food image" />
+      <img src="./Assets/Images/Gallery/8.png" alt="food image" />
+      <img src="./Assets/Images/Gallery/9.png" alt="food image" />
+      <img src="./Assets/Images/Gallery/10.png" alt="food image" />
+      <img src="./Assets/Images/Gallery/11.png" alt="food image" />
+      <img src="./Assets/Images/Gallery/12.png" alt="food image" />
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

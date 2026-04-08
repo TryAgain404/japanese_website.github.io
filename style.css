@@ -1,0 +1,71 @@
+body {
+  margin: 0px;
+  font-family: "Roboto";
+  background-color: #efe6dd;
+}
+
+header,
+.logo,
+.accountAndCart,
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111119;
+}
+
+header {
+  padding: 20px;
+}
+
+.logo p {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.links a {
+  color: white;
+}
+
+.links a:hover {
+  color: rgb(251, 145, 145);
+  font-weight: bolder;
+}
+
+.accountAndCart {
+  gap: 20px;
+}
+
+.links {
+  gap: 50px;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.title img {
+  width: 100%;
+  height: auto;
+}
+
+.title h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  font-size: 5vw;
+}
+
+.title p {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 50%;
+  font-size: 1.5vw;
+}

@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght,GRAD@0,8..144,600,1;1,8..144,600,1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japanese Restaurant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .RobotoSerif{
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 1;
+      }
+      .fa {
+        font-size: 64px;
+      }
+
+      header,
+      .logo,
+      .accountAndCart,
+      .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .accountAndCart {
+        gap: 20px;
+      }
+
+      .links {
+        gap: 50px;
+      }
+      body {
+        margin: 0%;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+      
+    .container1 {
+      display: flex;
+        background-color: #EFE6DD;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-left: 220px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-right: 100px;
+    }
+.container2 {
+      display: flex;
+        background-color: #DDD4CB;
+        align-items: center;
+        justify-content: center;
+       flex-direction: column;
+        gap: 40px;
+        padding: 70px;
+        text-align: center;
+    }
+    .container3{
+      display: flex;
+        background-color: #EFE6DD;
+        align-items: flex-start;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 70px;
+        row-gap: 20px;
+        padding: 70px;
+        text-align: center;
+    }
+    .button {
+      display: inline-block;
+      border-radius: 6px;
+      background-color: #f4511e;
+      border: none;
+      color: black;
+      text-align: center;
+      font-size: 20px;
+      padding: 20px;
+      width: 150px;
+      cursor: pointer;
+    }
+    .button2 {
+      display: inline-block;
+      border-radius: 6px;
+      background-color: #f4511e;
+      border: none;
+      color: black;
+      text-align: center;
+      font-size: 20px;
+      padding: 20px;
+      width: auto;
+      cursor: pointer;
+    }
+   
+    .button span {
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      right: -15px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 20px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    .button2 span {
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button2 span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      right: -15px;
+      transition: 0.5s;
+    }
+
+    .button2:hover span {
+      padding-right: 20px;
+    }
+
+    .button2:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    
+    
+    .RamenLogo img{
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .text1 {
+      flex: 0 1 auto;
+      max-width: 500px;
+      min-width: 250px;
+      text-align: left;
+    }
+
+    p {
+      font-size: 20px;
+    }
+    .text2{
+        max-width: 1000px;
+        margin-bottom: 0;
+        
+    }
+    .text3{
+      font-size: 60px;
+      text-underline-position: below;
+    }
+    .OurMenuimg{
+        border-radius: 0px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .container3 h1{
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .getInTouch{
+      gap:20px;
+      padding: 10px;
+      text-align: left;
+      max-width: 500px;
+      flex:1;
+      min-width: 300px;
+      
+    }
+    .findUs{
+      gap:20px;
+      padding: 10px;
+      text-align: left;
+      max-width: 500px;
+      flex: 1;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea{
+      width: 100%;
+      padding:12px;
+      background-color: #D9D9D9;
+      box-sizing: border-box;
+    }
+    input:focus, textarea:focus{
+      border: 1px solid black;
+    }
+    ul{
+      line-height: 20px;
+    }
+    .OurMenuimg img{
+      min-width: 200px;
+      max-width: 100%;
+      height: auto;
+    }
+    .TitleDiv{
+      background-image: url("./Assets/Images/Home/TitleSectionCover.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      align-items: center;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 20px;
+    }
+    .TitleDiv h1{
+      margin-top: 10px;
+      max-width: 800px;
+      color: white;
+      max-width: 650px;
+      text-align: center;
+      margin-bottom: 20px;
+      ;
+    }
+    .Aboutimage{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      min-width: 300px;
+    }
+    .Aboutimage img {
+      width: 70%;;
+    }
+    @media (max-width: 768px) {
+        img {
+          width: 80%;
+        }
+
+        .links {
+          gap: 15px;
+        }
+        .container1{
+          padding: 60px 20px;
+          flex-direction: column;
+          text-align: center;
+          gap: 30px;
+        }
+        .text1{
+          max-width: 100%;
+          min-width: none;
+          text-align: center;
+        }
+        .Aboutimage{
+          width: 100%;
+          order: 2;
+        }
+        .Aboutimage img{
+          width: 90%;
+          max-width: 400px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .img {
+          width: 60%;
+        }
+
+        .menu_items {
+          width: 60%;
+        }
+
+        header {
+          flex-direction: column;
+          padding: 10px;
+        }
+      }
+      /* .logo {
+        display: flex;
+        justify-content: space-between;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="logo">
+        <img src="./Assets/Icons/Logo-Ramen.svg" />
+        <p><span class="RobotoSerif">Japanese Restaurant</span></p>
+      </section>
+      <section class="links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+      </section>
+      <section class="accountAndCart">
+        <img src="./Assets/Icons/ShoppingCart.svg" alt="" />
+        <img src="./Assets/Icons/AccountIcon.svg" alt="" />
+      </section>
+    </header>
+    
+      <div class="TitleDiv">
+      
+      <div class="RamenLogo">
+      <img src="./Assets/Icons/RamenLogo.svg">
+      </div>
+      <div class="RobotoSerif">
+      <h1>Serving Traditional Japanese Dishes</h1>
+      </div>
+      <button  onclick="location.href='#about'" class="button2">
+        <span class="RobotoSerif"> Learn more</span>
+      </button>
+      </div>
+    
+    <div  id="about" class="container1">
+    <div class="text1">
+      <h1>About us</h1>
+      <p style="font-size: 24px;">We are an experienced and dedicated restaurant that specialise in preparing traditional, authentic Japanese cuisine. <br>We’ve been cooking traditional Japanese food the right way since 1990.</p>
+        <br>
+      </p>
+      <button onclick="location.href='menu.html'"  class="button">
+        <span class="RobotoSerif">Menu</span>
+      </button>
+    </div>
+    <div class="Aboutimage">
+      <img src="./Assets/Images/Home/aboutus.png" alt="random food pic ig">
+      </p>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="text2">
+    <h1>Our Menu</h1>
+    <p style="font-size: 24px;">We serve authentic Japanese cuisine and sushi <br>prepared by our chefs with experience.</p>
+    </div>
+    <div class="OurMenuimg">
+    <img src="./Assets/Images/Home/menu1.png" width="25%">
+    <img src="./Assets/Images/Home/menu2.png" width="25%">
+    <img src="./Assets/Images/Home/menu3.png" width="25%">
+    </div>
+    <button  onclick="location.href='menu.html'"   class="button">
+        <span class="RobotoSerif">Menu</span>
+      </button>
+</div>
+</div><div class="container3">
+     
+      <h1><u>Contact</u></h1>
+      <div class="getInTouch">
+        <form action="index.html" method="get">
+        <h2>Get in touch</h2>
+        <p><label for="name">Name:<br></label>
+        <input type="text" name="name" id="name" required placeholder="John Doe"/>
+        </p>
+         <p><label for="email">Email:<br></label>
+        <input type="email" name="email" id="email" required placeholder="johndoe@gmail.com"/>
+        </p>
+        <p><label for="message">Message:<br></label>
+        <input type="text" name="message" id="message" required placeholder="Enter message"/>
+
+        </p>
+        <br>
+        <button type="submit" class="button2">
+  <span class="RobotoSerif">Send Message</span>
+</button>
+      </form>
+      </div>
+      <div class="findUs">
+        <h2>Find us</h2>
+        <p>
+          Address:
+          <ul><li>Fake line 1</li>
+  <li>Fake line 2</li>
+  <li>Fake city</li></ul>
+        </p>
+        <img src="./Assets/Images/Home/RestaurantPic.jpg">
+      </div>
+     </div>
+     <br><br><br><br><br><br><br>
+     <br><br><br>
+  </body>
+</html>

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .menu_section {
+        display: flex;
+        justify-content: center;
+        gap: 1%;
+        flex-wrap: wrap;
+        margin-top: -40px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size:3rem;
+      }
+
+      .menu_items {
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        width: 30%;
+        margin-top:2%;
+        background-color: #e6dace;
+        padding: 20px;
+        border-radius: 25px;
+      }
+
+      .menu_details {
+        /* flex-grow: 1; */
+        width: 35%;
+      }
+
+      .menu_item_name {
+        font-weight: 700;
+        /* white-space: nowrap; */
+      }
+
+      @media (max-width: 768px) {
+        img {
+          width: 80%;
+        }
+
+        .links {
+          gap: 15px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .img {
+          width: 60%;
+        }
+
+        .menu_items {
+          width: 60%;
+        }
+
+        header {
+          flex-direction: column;
+          padding: 10px;
+        }
+      }
+      </style>
+  </head>
+  <body>
+    <header>
+      <section class="logo">
+        <img src="./Assets/Icons/Logo-Ramen.svg" />
+        <p>Japanese Restaurant</p>
+      </section>
+      <section class="links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+      </section>
+      <section class="accountAndCart">
+        <img src="./Assets/Icons/ShoppingCart.svg" alt="" />
+        <img src="./Assets/Icons/AccountIcon.svg" alt="" />
+      </section>
+    </header>
+
+    <section class="title">
+      <img
+        src="./Assets/Images/Gallery/Gallery_Menu_Header_Image.png"
+        alt="Gallery header image"
+      />
+      <h1>OUR MENU</h1>
+      <p>Try our delicious dishes!</p>
+    </section>
+
+    <section class="menu">
+      <h2>Sushi</h2>
+      <section class="menu_section">
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Sushi/1.png" alt="Sushi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">California Roll</p>
+            <p class="menu_item_price">€9.00</p>
+          </div>
+        </div>
+
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Sushi/2.png" alt="Sushi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Spicy Tuna Roll</p>
+            <p class="menu_item_price">€11.00</p>
+          </div>
+        </div>
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Sushi/3.png" alt="Sushi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Philly Roll</p>
+            <p class="menu_item_price">€12.50</p>
+          </div>
+        </div>
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Sushi/4.png" alt="Sushi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Rainbow Roll</p>
+            <p class="menu_item_price">€14.00</p>
+          </div>
+        </div>
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Sushi/5.png" alt="Sushi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Dragon Roll</p>
+            <p class="menu_item_price">€16.00</p>
+          </div>
+        </div>
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Sushi/6.png" alt="Sushi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Golden Tempura Roll</p>
+            <p class="menu_item_price">€15.00</p>
+          </div>
+        </div>
+      </section>
+
+      <h2>Ramen</h2>
+      <section class="menu_section">
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Ramen/1.png" alt="Sushi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Tonkotsu Ramen</p>
+            <p class="menu_item_price">€16.00</p>
+          </div>
+        </div>
+
+
+
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Ramen/2.png" alt="Sushi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Tonkotsu Ramen</p>
+            <p class="menu_item_price">€16.00</p>
+          </div>
+        </div>
+
+
+
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Ramen/3.png" alt="Sushi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Tonkotsu Ramen</p>
+            <p class="menu_item_price">€16.00</p>
+          </div>
+        </div>
+
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Ramen/4.png" alt="Sushi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Tonkotsu Ramen</p>
+            <p class="menu_item_price">€16.00</p>
+          </div>
+        </div>
+      </section>
+
+      <h2>Donburi</h2>
+      <section class="menu_section">
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Donburi/1.png" alt="Donburi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Gyu-Don</p>
+            <p class="menu_item_price">€16.00</p>
+          </div>
+        </div>
+
+
+
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Donburi/2.png" alt="Donburi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Katsu-Don</p>
+            <p class="menu_item_price">€16.00</p>
+          </div>
+        </div>
+
+
+
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Donburi/3.png" alt="Donburi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Rainy Day Beef Bowl</p>
+            <p class="menu_item_price">€20.00</p>
+          </div>
+        </div>
+
+        <div class="menu_items">
+          <div class="menu_image">
+            <img src="./Assets/Images/Menu/Donburi/4.png" alt="Donburi Image" />
+          </div>
+          <div class="menu_details">
+            <p class="menu_item_name">Unagi-Don</p>
+            <p class="menu_item_price">€18.00</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </body>
+</html>
